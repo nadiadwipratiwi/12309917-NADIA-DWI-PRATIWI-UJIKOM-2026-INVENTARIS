@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,7 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+Route::get('/export-category', [CategoryController::class, 'export'])->name('export.categories');
+
 Route::resource('categories', CategoryController::class);
+Route::resource('items', ItemController::class);

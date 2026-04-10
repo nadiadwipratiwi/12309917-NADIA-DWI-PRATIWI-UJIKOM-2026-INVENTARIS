@@ -3,12 +3,12 @@
         INVENTARIS
     </div>
     <div class="mt-4">
-        <div class="px-3 mb-2 small text-muted text-uppercase">Main Menu</div>
+        {{-- <div class="px-3 mb-2 small text-muted text-uppercase">Main Menu</div>
         <a href="" class="nav-link">Dashboard</a>
-        <hr class="sidebar-divider">
+        <hr class="sidebar-divider"> --}}
 
         <a href="{{ route('categories.index') }}" class="nav-link">Categories</a>
-        <a href="" class="nav-link">Items</a>
+        <a href="{{ route('items.index') }}" class="nav-link">Items</a>
         <a href="" class="nav-link">User Admin</a>
         <a href="" class="nav-link">User Staff</a>
 

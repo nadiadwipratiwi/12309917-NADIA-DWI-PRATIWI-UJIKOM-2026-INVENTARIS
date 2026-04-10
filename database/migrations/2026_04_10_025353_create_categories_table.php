@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->name();
-            $table->division_pj();
+            $table->string('name');
+            $table->enum('division_pj', ['Sarpras', 'Tata Usaha', 'Tefa']);
             $table->timestamps();
         });
     }
